@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeaderContainer, HeroContainer, FeatureContainer, OptFormContainer, JumbotronContainer} from '../../containers';
+import {HeaderContainer, HeroContainer, FeatureContainer, OptFormContainer, JumbotronContainer, ProjectsContainer} from '../../containers';
 import {Wave, Feature} from '../../components';
 import {Section, InnerWrap} from './Home.styles';
 
@@ -13,6 +13,7 @@ export default function Home() {
       </InnerWrap>
       <Wave />
       <JumbotronContainer />
+      <ProjectsContainer />
     </Section>
   );
 };

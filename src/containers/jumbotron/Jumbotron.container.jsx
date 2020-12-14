@@ -1,15 +1,31 @@
 import React from 'react';
 import {Jumbotron} from '../../components';
-import world from '../../_assets/img/world.svg';
+
+
 
 export default function JumbotronContainer() {
+  const data = [
+    {
+      header: "Who am I?",
+      body: "I'm a former Senior Network Engineer (6+ years of experience) turned Software Engineer (2+ years of experience). I decided to pivot and change careers when I felt that I wasn't satisfied – I quit, traveled, and returned to attend a coding bootcamp. I never looked back, and I've never been happier. In fact, my only regret is that I didn't make this career change sooner. I'm now currently looking for new opportunities where I can level up my skills, and collaborate with other like minded developers!",
+      image: 'Andre.jpeg'
+    }
+  ];
   return (
-    <Jumbotron>
-      <Jumbotron.Header>Connect with others from around the world</Jumbotron.Header>
-      <Jumbotron.ImageBlock src={world} alt="World map"/>
-      <Jumbotron.BodyWrap>
-        <Jumbotron.Body>Bottl makes it seamless to find and connect with other like minded people from around the world.</Jumbotron.Body>
-      </Jumbotron.BodyWrap>
-    </Jumbotron>
+    <>
+      {
+        data.map(({ header, body, image }) => {
+        return  (
+          <Jumbotron key={header + image}>
+            <Jumbotron.Header>{header}</Jumbotron.Header>
+            <Jumbotron.BodyWrap>
+              <Jumbotron.ImageBlock src={require(`../../_assets/img/${image}`).default} alt={"Profile"} />
+              <Jumbotron.Body>{body}</Jumbotron.Body>
+            </Jumbotron.BodyWrap>
+          </Jumbotron>
+          )
+        })
+      }
+    </>
   );
 };

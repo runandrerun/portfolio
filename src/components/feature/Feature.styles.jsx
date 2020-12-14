@@ -51,7 +51,7 @@ export const Subtitle = styled.h2`
     right: 0;
     opacity: 0;
     width: 100%;
-    background: #FFB6B3;
+    background: #355070;
     animation: showHide 10s ease-in-out;
 
     @keyframes showHide {

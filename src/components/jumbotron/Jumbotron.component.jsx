@@ -27,8 +27,6 @@ Jumbotron.Body = function JumbotronBody({ children, ...restProps }) {
 
 Jumbotron.ImageBlock = function JumbotronImageBlock({children, ...restProps}) {
   return (
-    <ImageBlock>
-      <img {...restProps} />
-    </ImageBlock>
+    <ImageBlock {...restProps} />
   )
 }
