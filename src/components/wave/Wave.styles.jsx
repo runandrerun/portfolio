@@ -12,7 +12,12 @@ export const ImageBlock = styled.div`
     bottom: -20px;
     width: 100%;
     transform: translateX(0);
-
+    @media (max-width: 1200px) {
+      bottom: -20px;
+    }
+    @media (min-width: 1200px) {
+      bottom: -100px;
+    }
     @media (max-width: 1000px) {
       bottom: 0;
     }

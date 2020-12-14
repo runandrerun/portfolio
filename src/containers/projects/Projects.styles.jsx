@@ -13,8 +13,10 @@ export const InnerWrap = styled.div`
 
 export const CardWrap = styled.div`
   display:flex;
-  flex-direction:row;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+
   @media (max-width: 1000px) {
     flex-direction: column;
     justify-content: center;
