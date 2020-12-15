@@ -15,11 +15,12 @@ export const CardWrap = styled.div`
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
 
   @media (max-width: 1000px) {
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important;
   }
 `;
 

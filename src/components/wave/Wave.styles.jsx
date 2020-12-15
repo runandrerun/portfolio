@@ -12,6 +12,9 @@ export const ImageBlock = styled.div`
     bottom: -20px;
     width: 100%;
     transform: translateX(0);
+    @media (max-width: 1400px) {
+      bottom: -56px;
+    }
     @media (max-width: 1200px) {
       bottom: -20px;
     }
@@ -23,6 +26,9 @@ export const ImageBlock = styled.div`
     }
     @media (max-width: 411px) {
       bottom: 11px;
+    }
+    @media (max-width: 375px) {
+      bottom: 18px;
     }
   }
 `;
