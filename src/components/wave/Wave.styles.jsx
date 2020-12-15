@@ -21,5 +21,8 @@ export const ImageBlock = styled.div`
     @media (max-width: 1000px) {
       bottom: 0;
     }
+    @media (max-width: 411px) {
+      bottom: 11px;
+    }
   }
 `;

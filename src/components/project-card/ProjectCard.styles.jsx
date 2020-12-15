@@ -70,6 +70,5 @@ export const Anchor = styled.a`
 
   @media (max-width: 1000px) {
     font-size: 1.2rem;
-    display: none !important;
   }
 `;
